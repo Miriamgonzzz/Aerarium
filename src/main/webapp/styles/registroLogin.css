@@ -1,0 +1,80 @@
+#sectionIndex{
+
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+#registro{
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: hidden;
+    justify-self: center;
+    text-align: center;
+    background: white;
+    padding: 0 35px 0 0;
+    margin-top: 10px;
+    line-height: 30px;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-image: linear, left;
+
+}
+
+#registro button{
+	
+	width: 40%;
+	margin-left: 28%;
+}
+
+#login{
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: hidden;
+    justify-self: center;
+    text-align: center;
+    background: white;
+    padding: 0 35px 0 0;
+    margin-top: 10px;
+    line-height: 30px;
+    border: 2px black solid;
+    border-radius: 5px;
+
+}
+
+#login button{
+	
+	width: 40%;
+	margin-left: 28%;
+}
+
+#registro li{
+
+    display: grid;
+}
+
+#login li{
+
+    display: grid;
+}
+
+#contenedor{
+	
+	background-image: url(../images/index_1.jpg);
+	border: 6px solid black;
+	background-size: cover;
+	margin-top: 20px;
+	opacity: 0.85;
+}
+
+#contenedor img{
+	margin-left:40px;
+}
+

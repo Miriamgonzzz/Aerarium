@@ -1,0 +1,96 @@
+/*#sectionAdministrador{
+
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+}*/
+
+ul{
+
+    list-style: none;
+  	
+
+}
+
+li{
+	
+	display: grid;
+    grid-template-columns: repeat(2,220px);
+    
+    
+}
+
+#registroJuego{
+
+
+    overflow: hidden;
+    justify-self: center;
+    text-align: center;
+    background: white;
+    padding: 0 45px 0 0;
+    margin: 20px 60px 20px 40px;
+    line-height: 30px;
+    border: 2px black solid;
+    border-radius: 5px;
+    height: 450px;
+    width: 500px;
+    float: left;
+
+}
+
+#registroJuego button{
+	
+	width: 40%;
+	margin-left: 28%;
+}
+
+#registroJuego li{
+
+    text-align: center;
+    padding-top: 5px;
+}
+
+*{
+    list-style: none;
+    text-align: center;
+}
+
+#ficha{
+	
+	width:50%;
+    overflow: hidden;
+    justify-self: center;
+    text-align: center;
+    background: white;
+    padding: 0 0px 0 0px;
+    margin: 20px;
+    margin-left: 25%;
+    line-height: 30px;
+    border: 2px black solid;
+    border-radius: 5xpx;
+  
+}
+
+#lista {
+
+    padding-left: 2%;
+}
+
+#lista img {
+	
+	width: 100px;
+	height: 100px;
+
+}
+
+
+#lista table td {
+
+    background-color: #FFF08F;
+    padding: 0px 20px 0px 20px;
+}
+
+#lista table th {
+
+    background-color: #FBDD04;
+    padding: 0px 20px 0px 20px;
+}

@@ -1,0 +1,21 @@
+
+footer {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    height: 150px;
+    background-image: url(../images/oldMap.jpg);
+    background-size: 100% 120%;
+    width: 100%;
+    margin-top: 15px;
+   
+}
+
+#thousandSunnyFooter{
+	
+	width: 55%;
+	height: 55%;
+	grid-column-start: 3;
+	margin-left: 20%;
+}
+

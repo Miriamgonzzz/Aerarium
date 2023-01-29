@@ -1,0 +1,47 @@
+drop database aerarium;
+create database aerarium;
+use aerarium;
+
+create table usuario (
+id_usuario int not null auto_increment,
+nombre_usuario varchar (128) not null,
+apellidos_usuario varchar (128) not null,
+correo_usuario varchar (128) not null,
+password_usuario varchar (128) not null,
+permiso_usuario tinyint not null,
+PRIMARY KEY (id_usuario)
+);
+
+create table juego (
+id_juego int not null auto_increment,
+titulo_juego varchar (128) not null,
+descripcion_juego text not null,
+fecha_juego date not null,
+plataforma_juego varchar (128) not null,
+imagen_juego varchar (128) not null,
+PRIMARY KEY (id_juego)
+);
+
+create table colecciona (
+id_colecciona int not null auto_increment,
+fk_usuario int not null,
+fk_juego int not null,
+FOREIGN KEY (fk_usuario) REFERENCES usuario (id_usuario),
+FOREIGN KEY (fk_juego) REFERENCES juego (id_juego),
+PRIMARY KEY (id_colecciona)
+);
+
+create table desea (
+id_desea int not null auto_increment,
+fk_usuario int not null,
+fk_juego int not null,
+FOREIGN KEY (fk_usuario) REFERENCES usuario (id_usuario),
+FOREIGN KEY (fk_juego) REFERENCES juego (id_juego),
+PRIMARY KEY (id_desea)
+);
+
+
+
+insert into usuario (nombre_usuario, apellidos_usuario, correo_usuario, password_usuario, permiso_usuario)  values ('Francisco', 'Albiar Jiménez', 'adminFran@aerarium.com', '6c1cae8d3d715d2e1759d64b2e91fe83', 1);
+insert into usuario (nombre_usuario, apellidos_usuario, correo_usuario, password_usuario, permiso_usuario)  values ('Andrés', 'Sánchez-Ramos Gabaldón', 'adminAndres@aerarium.com', '828c88f34ecb4c1ca8d89e018c6fad1a', 1);
+insert into usuario (nombre_usuario, apellidos_usuario, correo_usuario, password_usuario, permiso_usuario)  values ('Miriam', 'González Barrio', 'adminMiriam@aerarium.com', '77c12394ef7d4f23a8fa07d87309afd9', 1);

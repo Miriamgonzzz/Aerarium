@@ -1,0 +1,106 @@
+#sectionAdministrador{
+
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+#registroJuego{
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: hidden;
+    justify-self: center;
+    text-align: center;
+    background: white;
+    padding: 0 35px 0 0;
+    margin-top: 10px;
+    line-height: 30px;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-image: linear, left;
+
+}
+
+#registroJuego button{
+	
+	width: 40%;
+	margin-left: 28%;
+}
+
+#registroJuego li{
+
+    display: grid;
+}
+
+#lista img {
+	
+	width: 100px;
+	height: 100px;
+
+}
+
+
+*{
+    list-style: none;
+    text-align: center;
+}
+
+#ficha{
+	
+	width:50%;
+    overflow: hidden;
+    justify-self: center;
+    text-align: center;
+    background: white;
+    padding: 0 0px 0 0px;
+    margin: 20px;
+    margin-left: 25%;
+    line-height: 30px;
+    border: 2px black solid;
+    border-radius: 5xpx;
+  
+}
+
+#lista {
+
+    padding-left: 2%;
+}
+
+
+
+#lista table td {
+
+    background-color: #FFF08F;
+    padding: 0px 20px 0px 20px;
+}
+
+#lista table th {
+
+    background-color: #FBDD04;
+    padding: 0px 20px 0px 20px;
+}
+
+#buscadorBiblioteca li label{
+	
+	border: 2px solid black;
+	margin-right: 10px;
+	background-color:  #FBDD04;
+	font-size:17px;
+}
+
+#buscadorBiblioteca input{
+
+	border: 2px solid black;
+	
+}
+
+#buscadorBiblioteca button{
+	
+	margin-top: 10px;
+}

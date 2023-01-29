@@ -1,0 +1,70 @@
+@charset "ISO-8859-1";
+
+h1{
+	
+	text-align: center;
+	
+	
+}
+
+#contenedor{
+	
+
+    justify-self: center;
+    text-align: center;
+    background: white;
+    padding: 0 45px 0 0;
+    margin: 20px 60px 20px 280px;
+    line-height: 30px;
+    border: 2px black solid;
+    border-radius: 5px;
+    float: left;
+    opacity: 0.85;
+
+}
+
+#buscames{
+	
+	margin-top: 30px;
+	
+}
+
+/*cabecera*/
+#cabezera{
+    display: grid;
+    grid-template-columns: 40px 600px 40px;
+    border: black solid 1px;
+    align-items: rif;
+    overflow: hidden;
+    margin-left: 40px;
+    padding: 10px;
+    background: FAC144;
+}
+#cabezera div{
+    text-align: center;
+}
+
+/*tabla del calendario*/
+#diasc{
+    border: black 1px solid;
+    border-collapse: separate;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 55px;
+}
+#diasc th{
+    font: normal 14pt arial; width: 90px; height: 40px;
+    border: black solid 1px;
+}
+#diasc td{
+    font: normal 14pt arial; width: 90px; height: 40px;
+    border: black solid 1px;
+}
+
+/*pie*/
+#pie{
+    border: black solid 1px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    background: FAC144;
+}
